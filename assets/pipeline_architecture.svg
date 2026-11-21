@@ -1,0 +1,205 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1360 780" width="1360" height="780">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#EFF6FF"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="112%" height="115%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#475569"/>
+    </marker>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#B91C1C"/>
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#0F766E"/>
+    </marker>
+    <marker id="arrowAmber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#B45309"/>
+    </marker>
+  </defs>
+  <rect width="1360" height="780" fill="url(#bgGrad)"/>
+  <rect x="24" y="18" width="1312" height="58" rx="12" fill="#0F172A"/>
+  <text x="44" y="44" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">Financial Document RAG Architecture — Parsing, Metadata Routing &amp; Two-Stage Abstention</text>
+  <text x="44" y="63" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="12" fill="#94A3B8">Deterministic DOM table serialization + Zero-embedding lexical BM25 + Dual-pass deepseek-v4-flash verification &amp; comparison slot guard (public_test: 75.00 / 75)</text>
+  <rect x="24" y="96" width="1312" height="196" rx="14" fill="#FFFFFF" fill-opacity="0.78" stroke="#CBD5E1" stroke-width="1.2" stroke-dasharray="6,4"/>
+  <rect x="38" y="85" width="388" height="22" rx="6" fill="#1E3A5F"/>
+  <text x="50" y="100" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">PHASE 1 — OFFLINE INGESTION &amp; INDEXING (0 LLM CALLS)</text>
+  <rect x="24" y="318" width="1312" height="442" rx="14" fill="#FFFFFF" fill-opacity="0.78" stroke="#CBD5E1" stroke-width="1.2" stroke-dasharray="6,4"/>
+  <rect x="38" y="307" width="490" height="22" rx="6" fill="#0F766E"/>
+  <text x="50" y="322" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">PHASE 2 — ONLINE QUERY ROUTING, RETRIEVAL &amp; TWO-STAGE ABSTENTION</text>
+<g filter="url(#shadow)">
+  <rect x="40" y="120" width="260" height="152" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.6"/>
+  <path d="M 50,120 H 290 Q 300,120 300,130 V 154 H 40 V 130 Q 40,120 50,120 Z" fill="#334155"/>
+  <text x="52" y="142" font-family="-apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">1. HTML Financial Corpus</text>
+  <rect x="243.5" y="128" width="46.5" height="18" rx="9" fill="#E2E8F0"/>
+  <text x="266.8" y="140.5" text-anchor="middle" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="9.5" font-weight="700" fill="#1E293B">INPUT</text>
+  <text x="52" y="174" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">40 HTML filings (10 companies x 4):</text>
+  <text x="52" y="192.5" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">• Annual reports (FY24 &amp; FY25)</text>
+  <text x="52" y="211.0" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">• Q4 FY25 earnings calls</text>
+  <text x="52" y="229.5" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">• Broker FY25 research notes</text>
+  <text x="52" y="248.0" font-family='"SF Mono", Menlo, monospace' font-size="10.8" fill="#0F766E">No &lt;nav&gt;, no embeddings, &lt;=30m</text>
+</g>
+<g filter="url(#shadow)">
+  <rect x="340" y="120" width="290" height="152" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.6"/>
+  <path d="M 350,120 H 620 Q 630,120 630,130 V 154 H 340 V 130 Q 340,120 350,120 Z" fill="#1E3A5F"/>
+  <text x="352" y="142" font-family="-apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">2. Table Serialization</text>
+  <rect x="586.5" y="128" width="33.5" height="18" rx="9" fill="#DBEAFE"/>
+  <text x="603.2" y="140.5" text-anchor="middle" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="9.5" font-weight="700" fill="#1E3A8A">A01</text>
+  <text x="352" y="174" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">table_to_text(table_html) [A01]</text>
+  <text x="352" y="192.5" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">• Preserve &lt;caption&gt; unit line</text>
+  <text x="352" y="211.0" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">• Expand colspan &amp; join multi-row th</text>
+  <text x="352" y="229.5" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">• Bind Row | Col: Val (&lt;= 400 chars)</text>
+  <text x="352" y="248.0" font-family='"SF Mono", Menlo, monospace' font-size="10.8" fill="#0F766E">Task 1.1: 100.0% (8.00 / 8)</text>
+</g>
+<g filter="url(#shadow)">
+  <rect x="670" y="120" width="315" height="152" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.6"/>
+  <path d="M 680,120 H 975 Q 985,120 985,130 V 154 H 670 V 130 Q 670,120 680,120 Z" fill="#1E3A5F"/>
+  <text x="682" y="142" font-family="-apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">3. Section &amp; Header Chunker</text>
+  <rect x="915.5" y="128" width="59.5" height="18" rx="9" fill="#DBEAFE"/>
+  <text x="945.2" y="140.5" text-anchor="middle" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="9.5" font-weight="700" fill="#1E3A8A">A02–A03</text>
+  <text x="682" y="174" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">chunk_document(name, html) [A02-A03]</text>
+  <text x="682" y="192.5" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">• Extract company/FY/doc_type from DOM</text>
+  <text x="682" y="211.0" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">• Split whole tables &amp; prose (&lt;=1500c)</text>
+  <text x="682" y="229.5" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">• Repeat captions + [Company|FY|Sec]</text>
+  <text x="682" y="248.0" font-family='"SF Mono", Menlo, monospace' font-size="10.8" fill="#0F766E">Task 1.2: 100.0% · 590 chunks</text>
+</g>
+<g filter="url(#shadow)">
+  <rect x="1025" y="120" width="295" height="152" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.6"/>
+  <path d="M 1035,120 H 1310 Q 1320,120 1320,130 V 154 H 1025 V 130 Q 1025,120 1035,120 Z" fill="#0F766E"/>
+  <text x="1037" y="142" font-family="-apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">4. Catalog &amp; Financial Index</text>
+  <rect x="1231.0" y="128" width="79.0" height="18" rx="9" fill="#CCFBF1"/>
+  <text x="1270.5" y="140.5" text-anchor="middle" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="9.5" font-weight="700" fill="#115E59">0.6s BUILD</text>
+  <text x="1037" y="174" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">build_index(chunks) [A06-A08]</text>
+  <text x="1037" y="192.5" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">• Covered years map (prior/est cols)</text>
+  <text x="1037" y="211.0" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">• Filterable (company, doc_type) pools</text>
+  <text x="1037" y="229.5" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">• Inflection stems &amp; stopwords</text>
+  <text x="1037" y="248.0" font-family='"SF Mono", Menlo, monospace' font-size="10.8" fill="#0F766E">BM25Okapi(k1=1.4, b=0.55)</text>
+</g>
+<path d="M 300,196 L 340,196" stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M 630,196 L 670,196" stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M 985,196 L 1025,196" stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<g filter="url(#shadow)">
+  <rect x="40" y="346" width="290" height="154" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.6"/>
+  <path d="M 50,346 H 320 Q 330,346 330,356 V 380 H 40 V 356 Q 40,346 50,346 Z" fill="#1E3A5F"/>
+  <text x="52" y="368" font-family="-apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">5. Query Parser</text>
+  <rect x="215.0" y="354" width="105.0" height="18" rx="9" fill="#DBEAFE"/>
+  <text x="267.5" y="366.5" text-anchor="middle" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="9.5" font-weight="700" fill="#1E3A8A">Task 2.2: 100%</text>
+  <text x="52" y="400" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">parse_query(question) [A04]</text>
+  <text x="52" y="418.5" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">• Comparison span &amp; suffix trimming</text>
+  <text x="52" y="437.0" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">• Reject brokers/auditors; keep OOC</text>
+  <text x="52" y="455.5" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">• Extract target metric FY &amp; doc_type</text>
+  <text x="52" y="474.0" font-family='"SF Mono", Menlo, monospace' font-size="10.8" fill="#0F766E">make_llm() fallback only if &lt;2/miss</text>
+</g>
+<g filter="url(#shadow)">
+  <rect x="372" y="346" width="288" height="154" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.6"/>
+  <path d="M 382,346 H 650 Q 660,346 660,356 V 380 H 372 V 356 Q 372,346 382,346 Z" fill="#B45309"/>
+  <text x="384" y="368" font-family="-apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">6. Stage 1: Metadata Gate</text>
+  <rect x="616.5" y="354" width="33.5" height="18" rx="9" fill="#FEF3C7"/>
+  <text x="633.2" y="366.5" text-anchor="middle" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="9.5" font-weight="700" fill="#92400E">A12</text>
+  <text x="384" y="400" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">Catalog &amp; Year Check [A12]</text>
+  <text x="384" y="418.5" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">• Known _normalize_company_key?</text>
+  <text x="384" y="437.0" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">• Covered (company, doc_type) FY?</text>
+  <text x="384" y="455.5" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">  - FY23 -&gt; FY24 annual report</text>
+  <text x="384" y="474.0" font-family='"SF Mono", Menlo, monospace' font-size="10.8" fill="#0F766E">Rejects lookalikes &amp; FY21/22 early</text>
+</g>
+<g filter="url(#shadow)">
+  <rect x="716" y="346" width="286" height="154" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.6"/>
+  <path d="M 726,346 H 992 Q 1002,346 1002,356 V 380 H 716 V 356 Q 716,346 726,346 Z" fill="#1E3A5F"/>
+  <text x="728" y="368" font-family="-apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">7. Year Routing &amp; Split Pools</text>
+  <rect x="932.5" y="354" width="59.5" height="18" rx="9" fill="#DBEAFE"/>
+  <text x="962.2" y="366.5" text-anchor="middle" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="9.5" font-weight="700" fill="#1E3A8A">A04–A06</text>
+  <text x="728" y="400" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">Targeted Candidate Filtering [A04-A06]</text>
+  <text x="728" y="418.5" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">• Route FY to exact host filing</text>
+  <text x="728" y="437.0" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">• Comparison -&gt; separate per-co pools</text>
+  <text x="728" y="455.5" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">• Local BM25 IDF within each pool</text>
+  <text x="728" y="474.0" font-family='"SF Mono", Menlo, monospace' font-size="10.8" fill="#0F766E">Avoids Northgate/Brightwater clash</text>
+</g>
+<g filter="url(#shadow)">
+  <rect x="1044" y="346" width="276" height="154" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.6"/>
+  <path d="M 1054,346 H 1310 Q 1320,346 1320,356 V 380 H 1044 V 356 Q 1044,346 1054,346 Z" fill="#1E3A5F"/>
+  <text x="1056" y="368" font-family="-apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">8. Expansion &amp; Exact Priors</text>
+  <rect x="1250.5" y="354" width="59.5" height="18" rx="9" fill="#DBEAFE"/>
+  <text x="1280.2" y="366.5" text-anchor="middle" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="9.5" font-weight="700" fill="#1E3A8A">A09–A10</text>
+  <text x="1056" y="400" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">Score Boosters [A09-A10]</text>
+  <text x="1056" y="418.5" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">• Expand cash/borrowings/headcount</text>
+  <text x="1056" y="437.0" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">• Boost exact table rows (+1.5)</text>
+  <text x="1056" y="455.5" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">• Penalize rounded letters (-1.5)</text>
+  <text x="1056" y="474.0" font-family='"SF Mono", Menlo, monospace' font-size="10.8" fill="#0F766E">Top-10 single / 5+5 comparison</text>
+</g>
+<path d="M 1172,272 L 1172,298 L 516,298 L 516,346" stroke="#0F766E" stroke-width="2" fill="none" stroke-dasharray="5,4" marker-end="url(#arrowGreen)"/>
+<rect x="764.4" y="286.0" width="161.2" height="17" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="0.9"/>
+<text x="845.0" y="298.0" text-anchor="middle" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="10.2" font-weight="700" fill="#0F766E">Catalog &amp; Covered Years</text>
+<path d="M 330,423 L 372,423" stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M 660,423 L 716,423" stroke="#0F766E" stroke-width="2" fill="none" marker-end="url(#arrowGreen)"/>
+<rect x="669.2" y="396.0" width="37.6" height="16" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="0.9"/>
+<text x="688.0" y="407.5" text-anchor="middle" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="10" font-weight="700" fill="#0F766E">Pass</text>
+<path d="M 1002,423 L 1044,423" stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<g filter="url(#shadow)">
+  <rect x="40" y="578" width="266" height="148" rx="10" fill="#FEF2F2" stroke="#FECACA" stroke-width="1.6"/>
+  <path d="M 50,578 H 296 Q 306,578 306,588 V 612 H 40 V 588 Q 40,578 50,578 Z" fill="#B91C1C"/>
+  <text x="52" y="600" font-family="-apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">Abstention Output</text>
+  <rect x="223.5" y="586" width="72.5" height="18" rx="9" fill="#FEE2E2"/>
+  <text x="259.8" y="598.5" text-anchor="middle" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="9.5" font-weight="700" fill="#991B1B">RETURN []</text>
+  <text x="52" y="632" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">retrieve() returns []</text>
+  <text x="52" y="650.5" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">• Fixed generator is skipped (0 tokens)</text>
+  <text x="52" y="669.0" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">• Emits exact NOT_FOUND</text>
+  <text x="52" y="687.5" font-family='"SF Mono", Menlo, monospace' font-size="10.8" fill="#0F766E">Task 3: 100.0% kept / 100.0% rej</text>
+</g>
+<g filter="url(#shadow)">
+  <rect x="354" y="578" width="300" height="148" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.6"/>
+  <path d="M 364,578 H 644 Q 654,578 654,588 V 612 H 354 V 588 Q 354,578 364,578 Z" fill="#1E3A5F"/>
+  <text x="366" y="600" font-family="-apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">9. Stage 2: Rerank &amp; Verify</text>
+  <rect x="578.0" y="586" width="66.0" height="18" rx="9" fill="#DBEAFE"/>
+  <text x="611.0" y="598.5" text-anchor="middle" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="9.5" font-weight="700" fill="#1E3A8A">A11, A13</text>
+  <text x="366" y="632" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">deepseek-v4-flash Judge [A11, A13]</text>
+  <text x="366" y="650.5" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">• Rerank authoritative tables first</text>
+  <text x="366" y="669.0" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">• Verify requested metric is disclosed</text>
+  <text x="366" y="687.5" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">• Guard: malformed JSON != rejection</text>
+  <text x="366" y="706.0" font-family='"SF Mono", Menlo, monospace' font-size="10.8" fill="#0F766E">Selects top-5 (single call common)</text>
+</g>
+<g filter="url(#shadow)">
+  <rect x="734" y="578" width="256" height="148" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.6"/>
+  <path d="M 744,578 H 980 Q 990,578 990,588 V 612 H 734 V 588 Q 734,578 744,578 Z" fill="#B45309"/>
+  <text x="746" y="600" font-family="-apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">10. Widened Recheck</text>
+  <rect x="907.5" y="586" width="72.5" height="18" rx="9" fill="#FEF3C7"/>
+  <text x="943.8" y="598.5" text-anchor="middle" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="9.5" font-weight="700" fill="#92400E">A14 GUARD</text>
+  <text x="746" y="632" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">Recheck on Wider Pool [A14]</text>
+  <text x="746" y="650.5" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">• Only if Stage 2 = initial false</text>
+  <text x="746" y="669.0" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">• Expands top-24 (or 15/company)</text>
+  <text x="746" y="687.5" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">• Prevents miss-as-unanswerable</text>
+  <text x="746" y="706.0" font-family='"SF Mono", Menlo, monospace' font-size="10.8" fill="#0F766E">Final false -&gt; []; true -&gt; keep</text>
+</g>
+<g filter="url(#shadow)">
+  <rect x="1064" y="578" width="256" height="148" rx="10" fill="#F0FDFA" stroke="#99F6E4" stroke-width="1.6"/>
+  <path d="M 1074,578 H 1310 Q 1320,578 1320,588 V 612 H 1064 V 588 Q 1064,578 1074,578 Z" fill="#0F766E"/>
+  <text x="1076" y="600" font-family="-apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">11. Dual Guard &amp; Answer</text>
+  <rect x="1263.5" y="586" width="46.5" height="18" rx="9" fill="#CCFBF1"/>
+  <text x="1286.8" y="598.5" text-anchor="middle" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="9.5" font-weight="700" fill="#115E59">FINAL</text>
+  <text x="1076" y="632" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">_select_retrieved + generate()</text>
+  <text x="1076" y="650.5" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">• Force &gt;=1 chunk/company (comp)</text>
+  <text x="1076" y="669.0" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">• Verify original chunks (&lt;=5)</text>
+  <text x="1076" y="687.5" font-family='-apple-system, Helvetica Neue, sans-serif' font-size="11.8" fill="#334155">• Fixed deepseek-v4-flash answer</text>
+  <text x="1076" y="706.0" font-family='"SF Mono", Menlo, monospace' font-size="10.8" fill="#0F766E">Task 4 Acc: 100.0% (60/60)</text>
+</g>
+<path d="M 450,500 L 450,530 L 173,530 L 173,578" stroke="#B91C1C" stroke-width="2" fill="none" marker-end="url(#arrowRed)"/>
+<rect x="216.6" y="518.0" width="186.8" height="17" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="0.9"/>
+<text x="310.0" y="530.0" text-anchor="middle" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="10.2" font-weight="700" fill="#B91C1C">Unknown Co / Year -&gt; Reject</text>
+<path d="M 1182,500 L 1182,530 L 504,530 L 504,578" stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="789.4" y="518.0" width="161.2" height="17" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="0.9"/>
+<text x="870.0" y="530.0" text-anchor="middle" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="10.2" font-weight="700" fill="#475569">Top-K Ranked Candidates</text>
+<path d="M 596,578 L 596,556 L 1192,556 L 1192,578" stroke="#0F766E" stroke-width="2" fill="none" marker-end="url(#arrowGreen)"/>
+<rect x="775.0" y="544.0" width="270.0" height="17" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="0.9"/>
+<text x="910.0" y="556.0" text-anchor="middle" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="10.2" font-weight="700" fill="#0F766E">Answerable (true / null) -&gt; Select Top-5</text>
+<path d="M 654,652 L 734,652" stroke="#B45309" stroke-width="2" fill="none" marker-end="url(#arrowAmber)"/>
+<rect x="646.4" y="624.0" width="95.2" height="16" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="0.9"/>
+<text x="694.0" y="635.5" text-anchor="middle" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="10" font-weight="700" fill="#B45309">Initial False</text>
+<path d="M 990,652 L 1064,652" stroke="#0F766E" stroke-width="2" fill="none" marker-end="url(#arrowGreen)"/>
+<rect x="992.2" y="624.0" width="69.6" height="16" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="0.9"/>
+<text x="1027.0" y="635.5" text-anchor="middle" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="10" font-weight="700" fill="#0F766E">Recovered</text>
+<path d="M 862,726 L 862,744 L 173,744 L 173,726" stroke="#B91C1C" stroke-width="2" fill="none" marker-end="url(#arrowRed)"/>
+<rect x="431.6" y="732.0" width="186.8" height="17" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="0.9"/>
+<text x="525.0" y="744.0" text-anchor="middle" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="10.2" font-weight="700" fill="#B91C1C">Confirmed Undisclosed -&gt; []</text>
+</svg>
