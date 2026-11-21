@@ -138,34 +138,70 @@ python3 run_ablation.py                           # Optional: reproduce B0 -> A1
 
 ## Task 6: Reflection — When Execution Becomes Cheap
 
-> **Standalone Illustrated Edition:** Read the full formatted 4-page visual essay in [**`Reflection.pdf`**](Reflection.pdf).
+*Also provided as a standalone magazine-typeset edition in [**`Reflection.pdf`**](Reflection.pdf).*
 
-### Core Thesis Earned From Building HW4
-When an AI agent can carry you to **75.00/75 on a public benchmark** in a single afternoon, the primary danger is mistaking a green scorecard for genuine understanding. Stopping at our first public pass felt entirely rational—until an independent adversarial audit tested four slightly rephrased comparison questions, exposed how our earlier ablation rows bundled four levers together (`V5`), and proved via fault injection that final comparison coverage depended on a prompt hint rather than a code invariant. Ten years from now, when everyone commands tireless agents capable of coding, researching, and operating businesses, capability-per-dollar approaches zero. The divide will run between people who drift into approving fluent outputs and people who retain the discipline to verify truth, shoulder risk, and stay irreducibly human.
+![Artwork I — The Human Compass](reflection_assets/art_human_compass.jpg)
 
-### 1. What kind of person would you want to be in that world?
-I want to be a person of **deliberate intentionality, skeptical curiosity, and moral ownership**—an architect who refuses to let effortless execution atrophy my judgment. When personal agents handle boilerplate coding and synthesis overnight, the real threat is *passive drift*. I want to combine **builder's drive** (shipping systems that solve real human problems) with **auditor's restraint** (pausing to ask, *"Where would this fail quietly outside what we tested?"*). When output becomes cheap, character lives in the standards you keep even when nobody else checks.
+*Artwork I — The Human Compass: When autonomous agents drive execution bandwidth toward zero marginal cost, scarcity shifts from speed and throughput to intentionality, judgment, and moral ownership.*
 
-### 2. Which of your current ambitions would still matter?
-Ambitions built around fast routine throughput, test-taking edge, or credential signaling would lose meaning immediately. What remains completely intact is the ambition to **design resilient systems whose failure modes we truly understand**—financial systems where knowing when to abstain (`NOT_FOUND`) protects people from confident fabrication—alongside asking original research questions, co-building candid teams with people I respect, and deepening my understanding of how economics, technology, and human incentives interact.
+Ten years from now, everyone will command tireless personal AI agents capable of writing software, synthesizing research, managing operations, and making sophisticated decisions. Building and auditing this financial RAG system gave me an early preview of that world: collaborating with agents carried us to **75.00 / 75** and **60/60 accuracy** on `public_test` in a single afternoon—yet an independent adversarial review immediately uncovered hidden entity-boundary failures, bundled ablation illusions, and prompt-only invariants. When execution becomes effortless, **the decisive human divide shifts from how fast we generate outputs to what we still verify, struggle for, and refuse to delegate.**
 
-### 3. What would you want to be known for beyond your productivity and professional achievements?
-I want to be known for **quiet dependability under uncertainty, candor paired with kindness, and unhurried presence**. When agents make massive output commonplace, how you conduct yourself becomes your signature: putting the screen down to listen without turning a friend's concern into an optimization problem, having the honesty to admit mistakes cleanly without ego, and leaving teams, friendships, and projects steadier and more trustworthy than I found them.
+### 1. Who I Want to Be, What Ambitions Endure, and How I Want to Be Known
 
-### 4. What are you willing to struggle for, even when an AI agent could make the struggle unnecessary?
-I am unwilling to outsource four productive struggles: **first-principles debugging, writing in my own voice, physical endurance, and the vulnerable friction of real relationships**. During HW4, it would have been easy to nod at `75/75` and skip opening `ablation_final.log` or per-question CSV diffs. Tracing *why* section splitting alone (`A02`) dipped recall (`26.1% → 23.9%`), *why* financial tokenization (`A07`) raised table recall to 100% while causing `q015` to regress until `A09` fixed it, and *why* lookalike `q044` passed accidentally in `A07` before failing again in `A09` forged intuition no summary could grant. Without experiencing resistance, you lose the ear to catch an agent when it sounds confident and is subtly wrong. Outside engineering, slow primary-source reading, blank-page drafting, physical training, and honest hard conversations remain worth every ounce of friction.
+**Q1 · What kind of person would you want to be in that world?**
+I want to be a person of **deliberate intentionality, skeptical curiosity, and moral ownership**—an architect who refuses to let effortless execution atrophy my judgment. When personal agents handle boilerplate code, parse filings, and draft syntheses overnight, the main psychological hazard is *passive drift*: slipping into the role of an agreeable reviewer who rubber-stamps persuasive output. Treating high-speed leverage as an invitation to raise my epistemological standards rather than lower them means uniting **builder's drive** (shipping systems that solve messy real-world problems) with **auditor's restraint** (asking, *"Where does this break quietly when wording shifts outside the public benchmark?"*). When generating drafts costs almost nothing, character lives in the standards you refuse to compromise when nobody else can see the corners you cut.
 
-### 5. What skills, qualities, or experiences would still make you valuable?
-Value consolidates up the stack into three pillars:
-- **Problem Framing & Evaluation Taste:** Agents optimize whatever proxy you hand them; discerning *which* objective matches reality—and catching Goodhart traps between public benchmarks and unseen inputs—stays deeply human.
-- **Verification & Risk Ownership:** Software cannot sign a fiduciary duty, look a client in the eye, or feel moral regret. Engineers who wrap stochastic models in deterministic invariants and personally stand behind outcomes remain irreplaceable.
-- **Embodied Tacit Context:** Negotiating across conflicting incentives, recovering publicly from oversights, and mentoring teammates create judgment that clean synthetic data cannot imitate.
+**Q2 · Which of your current ambitions would still matter?**
+Any ambition built around **fast routine throughput, test-taking edge, or credential prestige** has a short half-life. If an agent can parse forty HTML filings, chase syntax bugs, and summarize transcripts in seconds, competing on raw output volume is a race to zero. What remains utterly durable is the ambition to **architect systems whose failure modes we genuinely understand**—financial systems where knowing when to abstain (`NOT_FOUND`) protects decision-makers from confident fabrication. Equally intact are my desires to formulate sharper original research questions, build teams defined by candor and shared curiosity, and understand how technology, economic incentives, and human vulnerability interact in the real economy.
 
-### 6. If your value is no longer determined primarily by what you can do, how will you define who you are?
-I will shift from **capability-as-identity** (*"what tasks can I output?"*) to **commitment-as-identity** (*"what truth, standards, and people do I stand behind?"*). Clinging to deliverable speed as self-worth guarantees fragility when models improve every quarter. Identity endures through three steady anchors: **commitments** kept when inconvenient, **attention** deliberately given to craft and people without rushing, and **intellectual honesty**—refusing performative shortcuts starting with my own work.
+**Q3 · What would you want to be known for beyond your productivity and professional achievements?**
+Once everyone looks prodigiously productive with agent leverage, deliverable throughput stops being a human signature. What I hope friends, family, and colleagues remember sits entirely outside the productivity ledger: **quiet dependability under ambiguity**, **candor without cruelty** (having the honesty to say *"we haven't verified this yet"* or *"I got this wrong"* cleanly without ego), and **unhurried presence**—putting the screen away to listen attentively rather than treating a friend's worry as an optimization puzzle, leaving relationships and teams steadier and more trustworthy than I found them.
 
-### 7. What should you start doing differently tomorrow?
-1. **Demand an Adversarial Counter-Suite Before Declaring "Done":** After every green public run, write counterfactual rephrasings and fault-injection checks (`test_hw4_regressions.py` style) before merging.
-2. **Reject Bundled Hypotheses:** Never treat multiple simultaneous changes (`V5`) as one causal step; isolate single variables and read failure diffs firsthand.
-3. **Enforce Code Invariants Over Prompt Hopes:** Wrap stochastic LLM calls inside deterministic guards (`_select_retrieved`, boundary parsing, widened-pool confirmation).
-4. **Protect Unassisted Craft & Human Presence:** Reserve daily blocks for slow reading, unassisted outlining before agent critique, and undivided offline time with friends and family.
+### 2. Why Struggle Still Matters — and Where Human Value Shifts
+
+![Artwork II — Productive Friction](reflection_assets/art_productive_friction.jpg)
+
+*Artwork II — Productive Friction: Effortless fluency costs a machine nothing, yet deliberate resistance is the exact mechanism through which human judgment and craft grow roots.*
+
+> *"Without experiencing resistance, you lose the calibrated ear needed to catch an agent when it sounds confident and is subtly wrong."*
+
+**Q4 · What are you willing to struggle for, even when an AI agent could make the struggle unnecessary?**
+I refuse to outsource four formative struggles: **first-principles debugging, writing in my own voice, physical endurance, and the vulnerable friction of real relationships**. During HW4, it would have been painless to take an early `75/75` printout and move on without ever reading `ablation_final.log` or per-question CSV transitions. Instead, wrestling through *why* section splitting alone (`A02`) unexpectedly dropped recall (`26.1% → 23.9%`), *why* financial tokenization (`A07`) raised table recall to `100%` while regressing auditor question `q015` until query expansion (`A09`) rescued it, and *why* lookalike `q044` passed purely by accident in `A07` before failing again in `A09` built an intuition no agent summary can hand over. The same holds outside engineering: slowly reading primary books, wrestling with a blank page until I know what I actually believe, training my body consistently, and staying present through honest, uncomfortable conversations with people I love. Friction is overhead for machines, but it is the exact mechanism by which human minds and relationships grow roots.
+
+**Q5 · What skills, qualities, or experiences would still make you valuable?**
+When execution scales effortlessly, durable human value consolidates further up the stack around three scarce capacities:
+1. **Problem framing & evaluation taste**—agents optimize relentlessly for whatever proxy metric you specify, leaving humans to spot Goodhart traps between green public sets and unseen failures and distinguish genuine insight from fluent fluff.
+2. **Verification & accountable risk ownership**—software cannot sign a fiduciary duty, look a client in the eye, or feel moral regret, making engineers who anchor stochastic models inside deterministic invariants indispensable.
+3. **Embodied tacit context**—lived experience negotiating across conflicting incentives, recovering publicly from oversights, reading unspoken hesitation, and mentoring younger peers.
+
+### 3. Insights From Building HW4: Three Illusions Hidden Behind a 75/75 Pass
+
+![Artwork III — The NOT_FOUND Gate](reflection_assets/art_not_found_gate.jpg)
+
+*Artwork III — The NOT_FOUND Gate: Refracting raw agent output through deterministic boundaries and widened-pool checks separates grounded evidence from confident mirages.*
+
+Collaborating with AI agents on this financial RAG assistant made these 2036 dynamics tangible right now. Reaching **75.00 / 75** and **60/60 accuracy** on `public_test` felt deceptively finished—until an independent adversarial review probed unseen rephrasings, audited our ablation grouping, and fault-injected a skewed reranker, exposing three concrete illusions:
+
+- **[ILLUSION 01] The Boundary Illusion — Green public scores hide phrasing fragility:** Rephrasing public comparison `q031` as *"Which company had higher net income: Brightwater Software or Brightwater Energy in FY2024?"* silently broke entity trimming—capturing `"Brightwater Energy in FY2024"` as an unknown company and falsely returning `NOT_FOUND`, invisible across all 60 original public items. Hardening `parse_query` with deterministic temporal/unit suffix stripping plus a `make_llm()` fallback whenever a comparison yields fewer than two entities eliminated the blind spot cleanly (`38/38` on our paraphrase suite).
+- **[ILLUSION 02] The Causal Illusion — Bundled narratives conceal intermediate trade-offs:** Early milestones grouped four lexical features together under one coarse `V5` step. Splitting them into 15 strictly single-variable runs (`B0→A14`) uncovered hidden regressions and crystallized the real design trade-offs we accepted under uncertainty:
+
+| HW4 Design / Audit Dilemma | The Tempting Shortcut | The Chosen Trade-Off & Principle |
+| :--- | :--- | :--- |
+| **Public 75/75 vs. Hidden Fragility** | Stop at `public_test` 100%; trust prompt hints for comparisons. | **Hardened boundaries + `_select_retrieved` + `A14` widening** despite zero extra public points. |
+| **Bundled `V5` vs. 15 Single Steps** | Leave coarse rows explaining four features as one clean milestone. | **Split into `B0→A14` (710.5s, $0.2755)** to truthfully isolate regressions in `A02` & `A07`. |
+| **Speed vs. Abstention Cost** | Use pure BM25 ($0.0134, 17s) everywhere or over-call LLMs. | **Deterministic routing + targeted verification ($0.0339)** deployed only where errors hurt most. |
+
+- **[ILLUSION 03] The Prompt-Only Illusion — Guardrails belong in deterministic code, not hopes:** Dual-company coverage in retrieved outputs initially leaned on a prompt instruction inside the reranker rather than a programmatic contract. Injecting a fault where the reranker returned only one company confirmed the prompt could silently drop the second entity. Moving slot guarantees into deterministic `_select_retrieved`, adding `A14` widened-pool rechecking (`top-24` single / `15+15` comparison), and treating malformed verifier JSON (`answerable=None`) as a safe non-rejection fixed the contract structurally.
+
+### 4. Redefining Identity — and What Changes Tomorrow
+
+**Q6 · If your value is no longer determined primarily by what you can do, how will you define who you are?**
+I will shift from **capability-as-identity** (*"what tasks can I output?"*) to **commitment-as-identity** (*"what truth, standards, and people do I stand behind?"*). Schooling and competitive careers subtly train us to tether self-worth to execution speed and deliverables. Once autonomous agents push deliverable bandwidth toward infinity for everyone, capability-as-identity guarantees quiet fragility—there will always be a faster release next quarter. Instead, I choose to define myself along three steady axes: **my commitments** (promises kept even when inconvenient), **my attention** (what craft, beauty, and human struggles I refuse to hurry past), and **my intellectual honesty** (refusing performative illusions, starting with my own work). Who we are is shaped far less by our throughput than by what we love enough to protect and verify with our own name.
+
+**Q7 · What should you start doing differently tomorrow?**
+1. **Demand an adversarial counter-suite before declaring "done":** Every time an agent delivers a green public run, write 5–10 counterfactual rephrasings and fault-injection checks—skewed rerankers, near-miss entity lookalikes, temporal suffix shifts in the style of `test_hw4_regressions.py`—before treating a benchmark pass as readiness.
+2. **Reject bundled hypotheses and inspect raw diffs firsthand:** Never label three simultaneous edits as one unified improvement. Isolate single causal levers, read intermediate failure logs (`ablation_final.log`) and per-item CSV transitions directly, and resist clean-looking aggregate summaries when subtle regressions hide underneath.
+3. **Wrap probabilistic agents inside hard code invariants:** Treat natural-language system prompts as soft guidance, never hard reliability contracts. Encode mission-critical invariants—entity boundary parsing, comparison slot minimums (`_select_retrieved`), widened re-verification, and malformed output fallbacks—directly in deterministic code.
+4. **Protect unassisted thinking and undivided human presence:** Reserve non-negotiable daily blocks for slow primary-source reading, outlining arguments in my own hand before letting an agent critique them, consistent physical training, and unhurried, screen-free attention for friends and family.
+
+> **Closing Synthesis:** *Building a financial RAG assistant turns out to be a faithful mirror of living well beside autonomous AI. Both depend on two quiet disciplines: knowing which sources genuinely ground a claim, and having the intellectual honesty to output `NOT_FOUND` whenever the evidence falls short. The future belongs not to the person who delegates the most, but to the person who knows best what must never be delegated.*
